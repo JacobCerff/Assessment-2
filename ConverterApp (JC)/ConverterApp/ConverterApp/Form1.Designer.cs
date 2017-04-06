@@ -29,106 +29,174 @@
         private void InitializeComponent()
         {
             this.lbl_UofM = new System.Windows.Forms.Label();
-            this.txt_UnitOfMeasure = new System.Windows.Forms.TextBox();
-            this.btn_CM_to_Inches = new System.Windows.Forms.Button();
-            this.btn_M_to_Feet = new System.Windows.Forms.Button();
-            this.btn_Exit = new System.Windows.Forms.Button();
-            this.lbl_Display = new System.Windows.Forms.Label();
-            this.lbl_Convert = new System.Windows.Forms.Label();
-            this.txt_Convert = new System.Windows.Forms.TextBox();
+            this.txt_Cm_To_Inhces = new System.Windows.Forms.TextBox();
+            this.btn_Covert = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btn_clr = new System.Windows.Forms.Button();
+            this.lstBox = new System.Windows.Forms.ListBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_Meters_To_Feet = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txt_Cm_To_Feet = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txt_Km_To_Miles = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_Celsuis_To_Fahrenheit = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbl_UofM
             // 
             this.lbl_UofM.AutoSize = true;
-            this.lbl_UofM.Location = new System.Drawing.Point(9, 20);
+            this.lbl_UofM.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_UofM.Location = new System.Drawing.Point(11, 20);
             this.lbl_UofM.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_UofM.Name = "lbl_UofM";
-            this.lbl_UofM.Size = new System.Drawing.Size(82, 13);
+            this.lbl_UofM.Size = new System.Drawing.Size(150, 18);
             this.lbl_UofM.TabIndex = 0;
-            this.lbl_UofM.Text = "Unit of Measure";
+            this.lbl_UofM.Text = "Unit of Measurement:";
             // 
-            // txt_UnitOfMeasure
+            // txt_Cm_To_Inhces
             // 
-            this.txt_UnitOfMeasure.Location = new System.Drawing.Point(106, 17);
-            this.txt_UnitOfMeasure.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txt_UnitOfMeasure.Name = "txt_UnitOfMeasure";
-            this.txt_UnitOfMeasure.Size = new System.Drawing.Size(76, 20);
-            this.txt_UnitOfMeasure.TabIndex = 1;
+            this.txt_Cm_To_Inhces.Location = new System.Drawing.Point(14, 57);
+            this.txt_Cm_To_Inhces.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_Cm_To_Inhces.Name = "txt_Cm_To_Inhces";
+            this.txt_Cm_To_Inhces.Size = new System.Drawing.Size(112, 20);
+            this.txt_Cm_To_Inhces.TabIndex = 1;
             // 
-            // btn_CM_to_Inches
+            // btn_Covert
             // 
-            this.btn_CM_to_Inches.Location = new System.Drawing.Point(66, 50);
-            this.btn_CM_to_Inches.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_CM_to_Inches.Name = "btn_CM_to_Inches";
-            this.btn_CM_to_Inches.Size = new System.Drawing.Size(122, 19);
-            this.btn_CM_to_Inches.TabIndex = 2;
-            this.btn_CM_to_Inches.Text = "Centimetres to Inches";
-            this.btn_CM_to_Inches.UseVisualStyleBackColor = true;
-            this.btn_CM_to_Inches.Click += new System.EventHandler(this.btn_CM_to_Inches_Click);
+            this.btn_Covert.Location = new System.Drawing.Point(14, 265);
+            this.btn_Covert.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Covert.Name = "btn_Covert";
+            this.btn_Covert.Size = new System.Drawing.Size(125, 30);
+            this.btn_Covert.TabIndex = 2;
+            this.btn_Covert.Text = "Covert";
+            this.btn_Covert.UseVisualStyleBackColor = true;
+            this.btn_Covert.Click += new System.EventHandler(this.btn_CM_to_Inches_Click);
             // 
-            // btn_M_to_Feet
+            // label1
             // 
-            this.btn_M_to_Feet.Location = new System.Drawing.Point(66, 84);
-            this.btn_M_to_Feet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_M_to_Feet.Name = "btn_M_to_Feet";
-            this.btn_M_to_Feet.Size = new System.Drawing.Size(122, 19);
-            this.btn_M_to_Feet.TabIndex = 3;
-            this.btn_M_to_Feet.Text = "Metres to Feet";
-            this.btn_M_to_Feet.UseVisualStyleBackColor = true;
-            this.btn_M_to_Feet.Click += new System.EventHandler(this.btn_M_to_Feet_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(201, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(94, 13);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Converter Results:";
             // 
-            // btn_Exit
+            // btn_clr
             // 
-            this.btn_Exit.Location = new System.Drawing.Point(211, 246);
-            this.btn_Exit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(56, 19);
-            this.btn_Exit.TabIndex = 4;
-            this.btn_Exit.Text = "EXIT";
-            this.btn_Exit.UseVisualStyleBackColor = true;
-            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
+            this.btn_clr.Location = new System.Drawing.Point(204, 249);
+            this.btn_clr.Name = "btn_clr";
+            this.btn_clr.Size = new System.Drawing.Size(80, 23);
+            this.btn_clr.TabIndex = 13;
+            this.btn_clr.Text = "Clear Results";
+            this.btn_clr.UseVisualStyleBackColor = true;
+            this.btn_clr.Click += new System.EventHandler(this.btn_clr_Click);
             // 
-            // lbl_Display
+            // lstBox
             // 
-            this.lbl_Display.AutoSize = true;
-            this.lbl_Display.Location = new System.Drawing.Point(11, 196);
-            this.lbl_Display.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_Display.Name = "lbl_Display";
-            this.lbl_Display.Size = new System.Drawing.Size(0, 13);
-            this.lbl_Display.TabIndex = 5;
+            this.lstBox.FormattingEnabled = true;
+            this.lstBox.Location = new System.Drawing.Point(185, 51);
+            this.lstBox.Name = "lstBox";
+            this.lstBox.Size = new System.Drawing.Size(120, 186);
+            this.lstBox.TabIndex = 14;
             // 
-            // lbl_Convert
+            // label2
             // 
-            this.lbl_Convert.AutoSize = true;
-            this.lbl_Convert.Location = new System.Drawing.Point(217, 196);
-            this.lbl_Convert.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_Convert.Name = "lbl_Convert";
-            this.lbl_Convert.Size = new System.Drawing.Size(0, 13);
-            this.lbl_Convert.TabIndex = 6;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(14, 42);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(112, 13);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Centimeters to Inches:";
             // 
-            // txt_Convert
+            // label3
             // 
-            this.txt_Convert.Location = new System.Drawing.Point(157, 194);
-            this.txt_Convert.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txt_Convert.Name = "txt_Convert";
-            this.txt_Convert.Size = new System.Drawing.Size(54, 20);
-            this.txt_Convert.TabIndex = 7;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(14, 84);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(78, 13);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Meters to Feet:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // txt_Meters_To_Feet
+            // 
+            this.txt_Meters_To_Feet.Location = new System.Drawing.Point(14, 100);
+            this.txt_Meters_To_Feet.Name = "txt_Meters_To_Feet";
+            this.txt_Meters_To_Feet.Size = new System.Drawing.Size(112, 20);
+            this.txt_Meters_To_Feet.TabIndex = 17;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(14, 127);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(101, 13);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "Centimeters to Feet:";
+            // 
+            // txt_Cm_To_Feet
+            // 
+            this.txt_Cm_To_Feet.Location = new System.Drawing.Point(14, 143);
+            this.txt_Cm_To_Feet.Name = "txt_Cm_To_Feet";
+            this.txt_Cm_To_Feet.Size = new System.Drawing.Size(112, 20);
+            this.txt_Cm_To_Feet.TabIndex = 19;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(14, 171);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(97, 13);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "Kilometers to Miles:";
+            // 
+            // txt_Km_To_Miles
+            // 
+            this.txt_Km_To_Miles.Location = new System.Drawing.Point(14, 187);
+            this.txt_Km_To_Miles.Name = "txt_Km_To_Miles";
+            this.txt_Km_To_Miles.Size = new System.Drawing.Size(112, 20);
+            this.txt_Km_To_Miles.TabIndex = 21;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(14, 211);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(108, 13);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "Celsius to Fahrenheit:";
+            // 
+            // txt_Celsuis_To_Fahrenheit
+            // 
+            this.txt_Celsuis_To_Fahrenheit.Location = new System.Drawing.Point(14, 228);
+            this.txt_Celsuis_To_Fahrenheit.Name = "txt_Celsuis_To_Fahrenheit";
+            this.txt_Celsuis_To_Fahrenheit.Size = new System.Drawing.Size(112, 20);
+            this.txt_Celsuis_To_Fahrenheit.TabIndex = 23;
             // 
             // frm_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(280, 278);
-            this.Controls.Add(this.txt_Convert);
-            this.Controls.Add(this.lbl_Convert);
-            this.Controls.Add(this.lbl_Display);
-            this.Controls.Add(this.btn_Exit);
-            this.Controls.Add(this.btn_M_to_Feet);
-            this.Controls.Add(this.btn_CM_to_Inches);
-            this.Controls.Add(this.txt_UnitOfMeasure);
+            this.ClientSize = new System.Drawing.Size(331, 315);
+            this.Controls.Add(this.txt_Celsuis_To_Fahrenheit);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txt_Km_To_Miles);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txt_Cm_To_Feet);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txt_Meters_To_Feet);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lstBox);
+            this.Controls.Add(this.btn_clr);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btn_Covert);
+            this.Controls.Add(this.txt_Cm_To_Inhces);
             this.Controls.Add(this.lbl_UofM);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frm_Main";
             this.Text = "ATCA Gas Converter";
             this.Load += new System.EventHandler(this.frm_Main_Load);
@@ -140,13 +208,20 @@
         #endregion
 
         private System.Windows.Forms.Label lbl_UofM;
-        private System.Windows.Forms.TextBox txt_UnitOfMeasure;
-        private System.Windows.Forms.Button btn_CM_to_Inches;
-        private System.Windows.Forms.Button btn_M_to_Feet;
-        private System.Windows.Forms.Button btn_Exit;
-        private System.Windows.Forms.Label lbl_Display;
-        private System.Windows.Forms.Label lbl_Convert;
-        private System.Windows.Forms.TextBox txt_Convert;
+        private System.Windows.Forms.TextBox txt_Cm_To_Inhces;
+        private System.Windows.Forms.Button btn_Covert;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_clr;
+        private System.Windows.Forms.ListBox lstBox;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txt_Meters_To_Feet;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txt_Cm_To_Feet;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txt_Km_To_Miles;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txt_Celsuis_To_Fahrenheit;
     }
 }
 
