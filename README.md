@@ -17,3 +17,9 @@ Part 3 -- Documentation + Code progression
 Added partial documentation, no testing
 
 github screenshots being made saved for later upload
+
+Part 1 - 5 Complete
+
+final merges, uploading completed code + finished documentation
+
+included github screenshot in next merge (need to take screeshot of final merge)
